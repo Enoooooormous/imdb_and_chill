@@ -13,10 +13,10 @@ I decomposed the process in three steps:
 Step 1: leverage AWS   
 The app needs two things: first, to recognize that there is a TV (true, you could be streaming on a different screen, but as I said, I like simplicity) and if there is a screen, locate and extract the text within the images (text which is the title of the movie/TV show - once again, there are no protections against misuse but it's a small project);   
 
-Step 2: leverage Google
+Step 2: leverage Google   
 To give you the rating, the app needs to go get it from IMDB. Unfortunately, there doesn't seem to be an existing API to easily fetch the data (thank you Amazon - Amazon owns both AWS and IMDB). I could use other data sources, but that would be cheating. Therefore I decided to use Google in order to get the right link.   
 
-Step 3: scrape, scrape, scrape!
+Step 3: scrape, scrape, scrape!   
 This is the part where the app scrape the HTML link in order to get the rating.   
    
 All is left to do is to output the rating on the image and to show it to the user. 
